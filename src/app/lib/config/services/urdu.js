@@ -9,6 +9,8 @@ const service = {
   articleTimestampPrefix: 'اپ ڈیٹ کی گئی',
   atiAnalyticsAppName: 'news-urdu',
   brandName: 'BBC News اردو',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Afaan Oromoo',
   serviceLocalizedName: 'اردو',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/urdu.png',
   defaultImageAltText: 'BBC News اردو',

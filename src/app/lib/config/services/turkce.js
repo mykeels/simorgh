@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-turkce',
   brandName: 'BBC News Türkçe',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Türkçe',
   product: 'BBC News Türkçe',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/turkce.png',
   defaultImageAltText: 'BBC News Türkçe',

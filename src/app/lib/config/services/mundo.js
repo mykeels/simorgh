@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-mundo',
   brandName: 'BBC News Mundo',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Mundo',
   product: 'BBC News Mundo',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/mundo.png',
   defaultImageAltText: 'BBC News Mundo',

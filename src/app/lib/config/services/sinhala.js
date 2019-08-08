@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-sinhala',
   brandName: 'BBC News සිංහල',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'සිංහල',
   product: 'BBC News සිංහල',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/sinhala.png',
   defaultImageAltText: 'BBC News සිංහල',

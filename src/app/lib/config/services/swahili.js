@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-swahili',
   brandName: 'BBC News Swahili',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Swahili',
   product: 'BBC News Swahili',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/swahili.png',
   defaultImageAltText: 'BBC News Swahili',

@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-russian',
   brandName: 'BBC News Русская служба',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Русская служба',
   product: 'BBC News Русская служба',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/russian.png',
   defaultImageAltText: 'BBC News Русская служба',

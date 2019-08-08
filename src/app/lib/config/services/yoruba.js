@@ -9,6 +9,8 @@ const yoruba = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-yoruba',
   brandName: 'BBC News Yorùbá',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Afaan Oromoo',
   locale: 'yo',
   isoLang: 'yo',
   datetimeLocale: 'yo',

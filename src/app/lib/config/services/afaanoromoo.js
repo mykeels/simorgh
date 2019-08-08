@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-afaanoromoo',
   brandName: 'BBC News Afaan Oromoo',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Afaan Oromoo',
   product: 'BBC News Afaan Oromoo',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/afaanoromoo.png',
   defaultImageAltText: 'BBC News Afaan Oromoo',

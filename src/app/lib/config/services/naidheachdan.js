@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-naidheachdan',
   brandName: "Naidheachdan a' BhBC",
+  brandNameEnglish: '',
+  brandNameLocalised: "Naidheachdan a' BhBC",
   product: "Naidheachdan a' BhBC",
   defaultImage:
     'https://www.bbc.co.uk/news/special/2015/newsspec_11063/naidheachdan_1024x576.png',

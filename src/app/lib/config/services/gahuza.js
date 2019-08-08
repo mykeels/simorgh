@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-gahuza',
   brandName: 'BBC News Gahuza',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Gahuza',
   product: 'BBC News Gahuza',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/gahuza.png',
   defaultImageAltText: 'BBC News Gahuza',

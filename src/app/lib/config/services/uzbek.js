@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-uzbek',
   brandName: "BBC News O'zbek",
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Afaan Oromoo',
   product: "BBC News O'zbek",
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/uzbek.png',
   defaultImageAltText: "BBC News O'zbek",

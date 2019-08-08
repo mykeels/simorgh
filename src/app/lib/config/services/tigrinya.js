@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-tigrinya',
   brandName: 'BBC News ትግርኛ',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'ትግርኛ',
   product: 'BBC News ትግርኛ',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/tigrinya.png',
   defaultImageAltText: 'BBC News ትግርኛ',

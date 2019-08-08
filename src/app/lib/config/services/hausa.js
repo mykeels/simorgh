@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-hausa',
   brandName: 'BBC News Hausa',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Hausa',
   product: 'BBC News Hausa',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/hausa.png',
   defaultImageAltText: 'BBC News Hausa',

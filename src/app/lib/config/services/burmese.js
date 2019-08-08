@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-burmese',
   brandName: 'BBC News မြန်မာ',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'မြန်မာ',
   product: 'BBC News မြန်မာ',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/burmese.png',
   defaultImageAltText: 'BBC News မြန်မာ',

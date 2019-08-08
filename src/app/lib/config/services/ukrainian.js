@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-ukrainian',
   brandName: 'BBC News Україна',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Afaan Oromoo',
   product: 'BBC News Україна',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/ukrainian.png',
   defaultImageAltText: 'BBC News Україна',

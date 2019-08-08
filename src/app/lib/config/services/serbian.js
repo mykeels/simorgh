@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-serbian',
   brandName: 'BBC News na srpskom',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'na srpskom',
   product: 'BBC News na srpskom',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/serbian.png',
   defaultImageAltText: 'BBC News na srpskom',

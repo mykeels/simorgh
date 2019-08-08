@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-vietnamese',
   brandName: 'BBC News Tiếng Việt',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Afaan Oromoo',
   product: 'BBC News Tiếng Việt',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/vietnamese.png',
   defaultImageAltText: 'BBC News Tiếng Việt',

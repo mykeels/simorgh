@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-marathi',
   brandName: 'BBC News मराठी',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'मराठी',
   product: 'BBC News मराठी',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/marathi.png',
   defaultImageAltText: 'BBC News मराठी',

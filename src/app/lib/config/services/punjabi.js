@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-punjabi',
   brandName: 'BBC News ਖ਼ਬਰਾਂ',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'ਖ਼ਬਰਾਂ',
   product: 'BBC News ਖ਼ਬਰਾਂ',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/punjabi.png',
   defaultImageAltText: 'BBC News ਖ਼ਬਰਾਂ',

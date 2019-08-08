@@ -9,6 +9,8 @@ const service = {
   atiAnalyticsAppName: 'news-korean',
   brandName: 'BBC News 코리아',
   product: 'BBC News 코리아',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: '코리아',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/korean.png',
   defaultImageAltText: 'BBC News 코리아',
   dir: `ltr`,

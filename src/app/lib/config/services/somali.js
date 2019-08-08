@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-somali',
   brandName: 'BBC News Somali',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Somali',
   product: 'BBC News Somali',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/somali.png',
   defaultImageAltText: 'BBC News Somali',

@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-amharic',
   brandName: 'BBC News አማርኛ',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'አማርኛ',
   product: 'BBC News አማርኛ',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/amharic.png',
   defaultImageAltText: 'BBC News አማርኛ',

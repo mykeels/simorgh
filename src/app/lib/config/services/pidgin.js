@@ -9,6 +9,8 @@ const pidgin = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-pidgin',
   brandName: 'BBC News Pidgin',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Pidgin',
   locale: 'pcm',
   isoLang: null,
   datetimeLocale: 'pcm',

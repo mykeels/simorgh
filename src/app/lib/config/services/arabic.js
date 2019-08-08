@@ -9,6 +9,8 @@ const service = {
   articleTimestampPrefix: 'جدّد في',
   atiAnalyticsAppName: 'news-arabic',
   brandName: 'BBC News عربي',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'عربي',
   serviceLocalizedName: 'عربي',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/arabic.png',
   defaultImageAltText: 'BBC News عربي',

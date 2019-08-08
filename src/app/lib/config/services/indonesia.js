@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-indonesia',
   brandName: 'BBC News Indonesia',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Indonesia',
   product: 'BBC News Indonesia',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/indonesia.png',
   defaultImageAltText: 'BBC News Indonesia',

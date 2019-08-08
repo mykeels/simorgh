@@ -14,6 +14,8 @@ const persian = {
   articleTimestampPrefix: 'به روز شده در',
   atiAnalyticsAppName: 'news-persian',
   brandName: 'BBC News فارسی',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'فارسی',
   serviceLocalizedName: 'فارسی',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/persian.png',
   defaultImageAltText: 'BBC News فارسی',

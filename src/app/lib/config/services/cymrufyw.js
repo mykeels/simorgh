@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-cymrufyw',
   brandName: 'BBC Cymru Fyw',
+  brandNameEnglish: 'BBC',
+  brandNameLocalised: 'Cymru Fyw',
   product: 'BBC Cymru Fyw',
   defaultImage:
     'https://www.bbc.co.uk/news/special/2015/newsspec_11063/cymru_fyw_1024x576.png',

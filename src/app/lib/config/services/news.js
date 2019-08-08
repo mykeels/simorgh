@@ -10,6 +10,8 @@ const news = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news',
   brandName: 'BBC News',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: '',
   product: 'BBC News',
   defaultImage:
     'https://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png',

@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-ukchina',
   brandName: 'BBC News 中文',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Afaan Oromoo',
   product: 'BBC News 中文',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/ukchina.png',
   defaultImageAltText: 'BBC News 中文',

@@ -9,6 +9,8 @@ const igbo = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-igbo',
   brandName: 'BBC News Ìgbò',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Ìgbò',
   locale: 'ig',
   isoLang: 'ig',
   datetimeLocale: 'ig',

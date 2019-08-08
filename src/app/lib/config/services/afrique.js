@@ -8,6 +8,8 @@ const service = {
   articleTimestampPrefix: 'Updated',
   atiAnalyticsAppName: 'news-afrique',
   brandName: 'BBC News Afrique',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'Afrique',
   product: 'BBC News Afrique',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/afrique.png',
   defaultImageAltText: 'BBC News Afrique',

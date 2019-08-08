@@ -9,6 +9,8 @@ const service = {
   articleTimestampPrefix: 'تازه',
   atiAnalyticsAppName: 'news-pashto',
   brandName: 'BBC News پښتو',
+  brandNameEnglish: 'BBC News',
+  brandNameLocalised: 'پښتو',
   serviceLocalizedName: 'پښتو',
   defaultImage: 'https://news.files.bbci.co.uk/ws/img/logos/og/pashto.png',
   defaultImageAltText: 'BBC News پښتو',
