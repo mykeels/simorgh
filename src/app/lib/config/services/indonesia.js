@@ -21,6 +21,7 @@ const service = {
   locale: `id-ID`,
   datetimeLocale: `id-ID`.toLowerCase(),
   service: 'indonesia',
+  serviceLocalisedName: '',
   serviceName: 'News Indonesia',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcindonesia',

@@ -22,6 +22,7 @@ const service = {
   locale: `cy`,
   datetimeLocale: `cy`.toLowerCase(),
   service: 'cymrufyw',
+  serviceLocalisedName: '',
   serviceName: 'Cymru Fyw',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@BBCCymruFyw',

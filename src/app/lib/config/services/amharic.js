@@ -21,6 +21,7 @@ const service = {
   locale: `am-ET`,
   datetimeLocale: `am-ET`.toLowerCase(),
   service: 'amharic',
+  serviceLocalisedName: '',
   serviceName: 'News አማርኛ',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcnewsamharic',

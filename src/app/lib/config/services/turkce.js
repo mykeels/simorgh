@@ -21,6 +21,7 @@ const service = {
   locale: `tr-TR`,
   datetimeLocale: `tr-TR`.toLowerCase(),
   service: 'turkce',
+  serviceLocalisedName: 'Türkçe',
   serviceName: 'News Türkçe',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcturkce',

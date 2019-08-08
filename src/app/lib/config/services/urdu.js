@@ -22,6 +22,7 @@ const service = {
   locale: 'ur',
   datetimeLocale: 'ur',
   service: 'urdu',
+  serviceLocalisedName: 'اردو',
   serviceName: 'Urdu',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcurdu',

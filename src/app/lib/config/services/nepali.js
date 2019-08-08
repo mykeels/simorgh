@@ -22,6 +22,7 @@ const service = {
   locale: `ne-NP`,
   datetimeLocale: `ne-NP`.toLowerCase(),
   service: 'nepali',
+  serviceLocalisedName: 'नेपाली',
   serviceName: 'News नेपाली',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcnepali',

@@ -21,6 +21,7 @@ const service = {
   locale: `uz-UZ`,
   datetimeLocale: `uz-UZ`.toLowerCase(),
   service: 'uzbek',
+  serviceLocalisedName: "O'zbek",
   serviceName: "News O'zbek",
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcuzbek',

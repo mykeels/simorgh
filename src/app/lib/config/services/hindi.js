@@ -21,6 +21,7 @@ const service = {
   locale: `hi-IN`,
   datetimeLocale: `hi-IN`.toLowerCase(),
   service: 'hindi',
+  serviceLocalisedName: '',
   serviceName: 'News हिंदी',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbchindi',

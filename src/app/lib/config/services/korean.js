@@ -21,6 +21,7 @@ const service = {
   locale: `ko-KO`,
   datetimeLocale: `ko-KO`.toLowerCase(),
   service: 'korean',
+  serviceLocalisedName: '',
   serviceName: 'News 코리아',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcworld',

@@ -21,6 +21,7 @@ const service = {
   locale: `gu-IN`,
   datetimeLocale: `gu-IN`.toLowerCase(),
   service: 'gujarati',
+  serviceLocalisedName: '',
   serviceName: 'News ગુજરાતી',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcnewsgujarati',

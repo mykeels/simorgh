@@ -21,6 +21,7 @@ const service = {
   locale: `so-SO`,
   datetimeLocale: `so-SO`.toLowerCase(),
   service: 'somali',
+  serviceLocalisedName: 'Somali',
   serviceName: 'News Somali',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcsomali',

@@ -21,6 +21,7 @@ const service = {
   locale: `ru-RU`,
   datetimeLocale: `ru-RU`.toLowerCase(),
   service: 'russian',
+  serviceLocalisedName: 'Русская служба',
   serviceName: 'News Русская служба',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcrussian',

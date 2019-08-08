@@ -4,7 +4,7 @@ import { bool } from 'prop-types';
 import { ServiceContext } from '../../contexts/ServiceContext';
 
 const BrandContainer = props => {
-  const { product, serviceLocalizedName, brandSVG, service } = useContext(
+  const { product, serviceLocalisedName, brandSVG, service } = useContext(
     ServiceContext,
   );
   const svgMaxHeight = 24;
@@ -16,7 +16,7 @@ const BrandContainer = props => {
   return (
     <Brand
       product={product}
-      serviceLocalisedName={serviceLocalizedName}
+      serviceLocalisedName={serviceLocalisedName}
       svgHeight={svgMaxHeight}
       minWidth={minWidth}
       maxWidth={maxWidth}

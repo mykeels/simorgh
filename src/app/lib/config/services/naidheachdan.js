@@ -22,6 +22,7 @@ const service = {
   locale: `gd`,
   datetimeLocale: `gd`.toLowerCase(),
   service: 'naidheachdan',
+  serviceLocalisedName: 'Naidheachdan',
   serviceName: 'Naidheachdan',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcnaidheachdan',

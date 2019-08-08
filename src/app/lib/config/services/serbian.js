@@ -21,6 +21,7 @@ const service = {
   locale: `sr-Latn`,
   datetimeLocale: `sr-Latn`.toLowerCase(),
   service: 'serbian',
+  serviceLocalisedName: 'na srpskom',
   serviceName: 'News na srpskom',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcnasrpskom',

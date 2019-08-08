@@ -21,6 +21,7 @@ const service = {
   locale: `vi-VN`,
   datetimeLocale: `vi-VN`.toLowerCase(),
   service: 'vietnamese',
+  serviceLocalisedName: 'Tiếng Việt',
   serviceName: 'BBC News Tiếng Việt',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcvietnamese',

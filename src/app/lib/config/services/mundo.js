@@ -21,6 +21,7 @@ const service = {
   locale: `es-005`,
   datetimeLocale: `es-005`.toLowerCase(),
   service: 'mundo',
+  serviceLocalisedName: 'Mundo',
   serviceName: 'News Mundo',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcmundo',

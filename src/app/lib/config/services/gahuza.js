@@ -21,6 +21,7 @@ const service = {
   locale: `rw-RW`,
   datetimeLocale: `rw-RW`.toLowerCase(),
   service: 'gahuza',
+  serviceLocalisedName: '',
   serviceName: 'News Gahuza',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcgahuza',

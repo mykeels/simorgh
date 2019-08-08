@@ -22,6 +22,7 @@ const service = {
   locale: 'ar',
   datetimeLocale: 'ar',
   service: 'arabic',
+  serviceLocalisedName: '',
   serviceName: 'Arabic',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@BBCArabic',

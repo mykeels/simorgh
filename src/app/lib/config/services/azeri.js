@@ -21,6 +21,7 @@ const service = {
   locale: `az-AZ`,
   datetimeLocale: `az-AZ`.toLowerCase(),
   service: 'azeri',
+  serviceLocalisedName: '',
   serviceName: 'News Azərbaycanca',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcazeri',

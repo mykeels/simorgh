@@ -21,6 +21,7 @@ const service = {
   locale: `sw-KE`,
   datetimeLocale: `sw-KE`.toLowerCase(),
   service: 'swahili',
+  serviceLocalisedName: '',
   serviceName: 'News Swahili',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcswahili',

@@ -24,6 +24,7 @@ const news = {
   locale: 'en_GB',
   datetimeLocale: 'en-gb',
   service: 'news',
+  serviceLocalisedName: '',
   serviceName: 'News',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@BBCNews',

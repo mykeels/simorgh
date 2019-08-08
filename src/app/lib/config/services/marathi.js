@@ -21,6 +21,7 @@ const service = {
   locale: `mr-IN`,
   datetimeLocale: `mr-IN`.toLowerCase(),
   service: 'marathi',
+  serviceLocalisedName: '',
   serviceName: 'News मराठी',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcnewsmarathi',

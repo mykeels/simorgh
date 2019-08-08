@@ -21,6 +21,7 @@ const service = {
   locale: `bn-BD`,
   datetimeLocale: `bn-BD`.toLowerCase(),
   service: 'bengali',
+  serviceLocalisedName: '',
   serviceName: 'News বাংলা',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcbangla',

@@ -21,6 +21,7 @@ const service = {
   locale: `om-ET`,
   datetimeLocale: `om-ET`.toLowerCase(),
   service: 'afaanoromoo',
+  serviceLocalisedName: '',
   serviceName: 'News Afaan Oromoo',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@BBCAfrica',

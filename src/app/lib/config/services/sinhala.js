@@ -21,6 +21,7 @@ const service = {
   locale: `si-LK`,
   datetimeLocale: `si-LK`.toLowerCase(),
   service: 'sinhala',
+  serviceLocalisedName: '',
   serviceName: 'News සිංහල',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcsinhala',

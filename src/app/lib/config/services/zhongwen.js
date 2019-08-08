@@ -21,6 +21,7 @@ const service = {
   locale: `zh_CN`,
   datetimeLocale: `zh_CN`.toLowerCase(),
   service: 'zhongwen',
+  serviceLocalisedName: '中文',
   serviceName: 'News 中文',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcchinese',

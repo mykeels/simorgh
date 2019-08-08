@@ -22,6 +22,7 @@ const service = {
   locale: `ja-JP`,
   datetimeLocale: `ja-JP`.toLowerCase(),
   service: 'japanese',
+  serviceLocalisedName: '',
   serviceName: 'ニュース',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcnewsjapan',

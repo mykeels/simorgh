@@ -21,6 +21,7 @@ const service = {
   locale: `uk-UA`,
   datetimeLocale: `uk-UA`.toLowerCase(),
   service: 'ukrainian',
+  serviceLocalisedName: 'Україна',
   serviceName: 'Україна',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@BBC_ua',

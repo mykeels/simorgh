@@ -21,6 +21,7 @@ const service = {
   locale: `ky-KG`,
   datetimeLocale: `ky-KG`.toLowerCase(),
   service: 'kyrgyz',
+  serviceLocalisedName: '',
   serviceName: 'News Кыргыз КызMATы',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbckyrgyz',

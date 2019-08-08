@@ -21,6 +21,7 @@ const service = {
   locale: `fr`,
   datetimeLocale: `fr`,
   service: 'afrique',
+  serviceLocalisedName: '',
   serviceName: 'News Afrique',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcafrique',

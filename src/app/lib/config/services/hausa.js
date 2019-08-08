@@ -21,6 +21,7 @@ const service = {
   locale: `ha-GH`,
   datetimeLocale: `ha-GH`.toLowerCase(),
   service: 'hausa',
+  serviceLocalisedName: '',
   serviceName: 'News Hausa',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbchausa',

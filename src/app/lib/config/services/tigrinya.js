@@ -21,6 +21,7 @@ const service = {
   locale: `ti-ET`,
   datetimeLocale: `ti-ET`.toLowerCase(),
   service: 'tigrinya',
+  serviceLocalisedName: 'ትግርኛ',
   serviceName: 'News ትግርኛ',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcafrica',

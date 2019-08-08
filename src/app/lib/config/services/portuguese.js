@@ -21,6 +21,7 @@ const service = {
   locale: `pt-BR`,
   datetimeLocale: `pt-BR`.toLowerCase(),
   service: 'portuguese',
+  serviceLocalisedName: 'Brasil',
   serviceName: 'News Brasil',
   themeColor: `${C_POSTBOX}`,
   twitterCreator: '@bbcbrasil',
