@@ -38,9 +38,19 @@ Cypress.Commands.add('copyrightDataWindow', () => {
     );
     const { copyrightHolder } = rawImageblock.model;
 
-    cy.get('figure p')
+    cy.get('figure')
       .eq(0)
-      .should('contain', copyrightHolder);
+      .then($fig => {
+        if (copyrightHolder !== 'BBC') {
+          cy.get($fig).within(() => {
+            cy.get('p')
+              .eq(0)
+              .should('contain', copyrightHolder);
+          });
+        } else {
+          expect($fig).to.not.have.descendants('p');
+        }
+      });
   });
 });
 
