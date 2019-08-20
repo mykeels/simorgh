@@ -136,7 +136,7 @@ pipeline {
     }
     stage ('Build, Test & Package') {
       when {
-        expression { env.BRANCH_NAME == 'latest' }
+        expression { env.BRANCH_NAME == 'AuditScripts' }
       }
       parallel {
         stage ('Test Development') {
