@@ -98,7 +98,7 @@ pipeline {
   stages {
     stage ('Build and Test') {
       when {
-        expression { env.BRANCH_NAME == 'whydontyouwork' }
+        expression { env.BRANCH_NAME != 'latest' }
       }
       parallel {
         stage ('Test Development') {
