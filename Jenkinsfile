@@ -98,7 +98,7 @@ pipeline {
   stages {
     stage ('Build and Test') {
       when {
-        expression { env.BRANCH_NAME == 'superlongstringforsomereason' }
+        expression { env.BRANCH_NAME == 'a' }
       }
       parallel {
         stage ('Test Development') {
