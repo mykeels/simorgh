@@ -98,7 +98,7 @@ pipeline {
   stages {
     stage ('Build and Test') {
       when {
-        expression { env.BRANCH_NAME == 'pleaseaskllkdja' }
+        expression { env.BRANCH_NAME == 'pja' }
       }
       parallel {
         stage ('Test Development') {
