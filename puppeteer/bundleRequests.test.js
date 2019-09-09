@@ -2,6 +2,8 @@
 import puppeteer from 'puppeteer';
 import { localBaseUrl } from '../src/testHelpers/config';
 
+// testing tests
+
 global.Cypress = { env: () => 'local' };
 
 const config = require('../cypress/support/config/services');
