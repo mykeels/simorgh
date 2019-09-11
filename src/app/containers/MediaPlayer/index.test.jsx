@@ -1,6 +1,6 @@
 import React from 'react';
 import { string, shape, node } from 'prop-types';
-import { shouldMatchSnapshot } from '../../../testHelpers';
+import renderHelmet from '../../../testHelpers/renderHelmet';
 import MediaPlayerContainer from '.';
 import { RequestContextProvider } from '../../contexts/RequestContext';
 import { ToggleContext } from '../../contexts/ToggleContext';
@@ -48,35 +48,46 @@ ContextWrapper.defaultProps = {
 
 describe('MediaPlayer', () => {
   describe('is called correctly', () => {
-    shouldMatchSnapshot(
-      'Calls the canonical placeholder when platform is canonical',
-      <ContextWrapper platform="canonical">
-        <MediaPlayerContainer blocks={validVideoFixture} />
-      </ContextWrapper>,
-    );
+    it('Calls the canonical placeholder when platform is canonical', async () => {
+      const html = await renderHelmet(
+        <ContextWrapper platform="canonical">
+          <MediaPlayerContainer blocks={validVideoFixture} />
+        </ContextWrapper>,
+      );
+      expect(html).toMatchSnapshot();
+    });
 
-    shouldMatchSnapshot(
-      'Calls the canonical player when platform is canonical and placeholder is false',
-      <ContextWrapper platform="canonical">
-        <MediaPlayerContainer blocks={validVideoFixture} placeholder={false} />
-      </ContextWrapper>,
-    );
+    it('Calls the canonical player when platform is canonical and placeholder is false', async () => {
+      const html = await renderHelmet(
+        <ContextWrapper platform="canonical">
+          <MediaPlayerContainer
+            blocks={validVideoFixture}
+            placeholder={false}
+          />
+        </ContextWrapper>,
+      );
+      expect(html).toMatchSnapshot();
+    });
 
-    shouldMatchSnapshot(
-      'Calls the AMP player when platform is AMP',
-      <ContextWrapper platform="amp">
-        <MediaPlayerContainer blocks={validVideoFixture} />
-      </ContextWrapper>,
-    );
+    it('Calls the AMP player when platform is AMP', async () => {
+      const html = await renderHelmet(
+        <ContextWrapper platform="amp">
+          <MediaPlayerContainer blocks={validVideoFixture} />
+        </ContextWrapper>,
+      );
+      expect(html).toMatchSnapshot();
+    });
   });
 
   describe('Fails and returns early when', () => {
-    shouldMatchSnapshot(
-      'there is no versionId',
-      <ContextWrapper platform="canonical">
-        <MediaPlayerContainer blocks={missingVpidFixture} />
-      </ContextWrapper>,
-    );
+    it('there is no versionId', async () => {
+      const html = await renderHelmet(
+        <ContextWrapper platform="canonical">
+          <MediaPlayerContainer blocks={missingVpidFixture} />
+        </ContextWrapper>,
+      );
+      expect(html).toMatchSnapshot();
+    });
 
     const toggleState = {
       test: {
@@ -86,11 +97,13 @@ describe('MediaPlayer', () => {
       },
     };
 
-    shouldMatchSnapshot(
-      'component is toggled off',
-      <ContextWrapper platform="canonical" toggleState={toggleState}>
-        <MediaPlayerContainer blocks={validVideoFixture} />
-      </ContextWrapper>,
-    );
+    it('component is toggled off', async () => {
+      const html = await renderHelmet(
+        <ContextWrapper platform="canonical" toggleState={toggleState}>
+          <MediaPlayerContainer blocks={validVideoFixture} />
+        </ContextWrapper>,
+      );
+      expect(html).toMatchSnapshot();
+    });
   });
 });

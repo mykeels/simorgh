@@ -5,84 +5,100 @@ exports[`MediaPlayer Fails and returns early when component is toggled off 1`] =
 exports[`MediaPlayer Fails and returns early when there is no versionId 1`] = `null`;
 
 exports[`MediaPlayer is called correctly Calls the AMP player when platform is AMP 1`] = `
-.c1 {
-  padding-top: 56.25%;
-  position: relative;
-  overflow: hidden;
-}
-
-.c0 {
-  grid-column: 1 / span 6;
-}
-
-@media (max-width:25rem) {
-  .c0 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:62.9375rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    grid-column: 1 / span 5;
-    max-width: 83.33%;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c0 {
-    grid-column: 3 / span 5;
-    max-width: 37.75rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c0 {
-    grid-column: 6 / span 10;
-    max-width: 38.5rem;
-  }
-}
-
-@supports (display:grid) {
-  .c0 {
-    max-width: initial;
-  }
-}
-
-<div
-  className="c0"
->
-  <helmet-head />
-  <div
-    className="c1"
-  >
-    <helmet-head>
-      <script
-        async={true}
-        custom-element="amp-iframe"
-        src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"
-      />
-    </helmet-head>
-    <amp-iframe
-      allowfullscreen={true}
-      frameborder="0"
-      layout="fill"
-      sandbox="allow-scripts allow-same-origin"
-      src="https://www.test.bbc.com/ws/av-embeds/articles/foo/p01k6msp/amp"
+<html>
+  <head>
+    <style
+      data-styled=""
+      data-styled-version="4.3.2"
     >
-      <amp-img
-        layout="fill"
-        placeholder={true}
-        src="https://ichef.test.bbci.co.uk/images/ic/512xn/p01k6mtv.jpg"
-      />
-    </amp-iframe>
-  </div>
-</div>
+      
+      
+/* sc-component-id: StyledImg-sc-7vx2mr-0 */
+.hIxkbt{display:block;width:100%;visibility:visible;}
+      
+/* sc-component-id: StyledPlaceholder-sc-11nyhtu-0 */
+.fbxKDx{cursor:pointer;position:absolute;top:0;left:0;width:100%;height:100%;}
+      
+/* sc-component-id: StyledIframe-fuo2ed-0 */
+
+      
+/* sc-component-id: StyledContainer-sc-13p1a4d-0 */
+.IWAqw{padding-top:56.25%;position:relative;overflow:hidden;}
+      
+/* sc-component-id: Grid-sc-12lwanc-0 */
+
+      
+/* sc-component-id: GhostGrid-sc-12lwanc-1 */
+
+      
+/* sc-component-id: GridItemConstrainedSmall-sc-12lwanc-2 */
+
+      
+/* sc-component-id: GridItemConstrainedMedium-sc-12lwanc-3 */
+.fexpEX{grid-column:1 / span 6;} @media (max-width:25rem){.fexpEX{padding:0 0.5rem;}} @media (min-width:25rem) and (max-width:62.9375rem){.fexpEX{padding:0 1rem;}} @media (max-width:37.4375rem){} @media (min-width:37.5rem){.fexpEX{grid-column:1 / span 5;max-width:83.33%;}} @media (min-width:63rem) and (max-width:80rem){.fexpEX{grid-column:3 / span 5;max-width:37.75rem;}} @media (min-width:80rem){.fexpEX{grid-column:6 / span 10;max-width:38.5rem;}} @supports (display:grid){.fexpEX{max-width:initial;}}
+      
+/* sc-component-id: GridItemConstrainedLarge-sc-12lwanc-4 */
+
+      
+/* sc-component-id: GridItemConstrainedLargeNoMargin-sc-12lwanc-5 */
+
+      
+/* sc-component-id: GridItemConstrainedLargeWithTopMargin-sc-12lwanc-6 */
+
+      
+/* sc-component-id: NestedGridItemChildSmall-sc-12lwanc-7 */
+
+      
+/* sc-component-id: NestedGridItemChildMedium-sc-12lwanc-8 */
+
+      
+/* sc-component-id: NestedGridItemChildLarge-sc-12lwanc-9 */
+
+      
+/* sc-component-id: NestedGridParentLarge-sc-12lwanc-10 */
+
+      
+/* sc-component-id: NestedGridParentMedium-sc-12lwanc-11 */
+
+      
+/* sc-component-id: NestedGridParentSmall-sc-12lwanc-12 */
+
+      
+/* sc-component-id: PopOutAtGroup5-sc-12lwanc-13 */
+
+    </style>
+    <script
+      async="true"
+      custom-element="amp-iframe"
+      src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"
+    />
+  </head>
+  <body>
+    <div>
+      <div
+        class="GridItemConstrainedMedium-sc-12lwanc-3 fexpEX"
+      >
+        <div
+          class="StyledContainer-sc-13p1a4d-0 IWAqw"
+        >
+          <amp-iframe
+            allowfullscreen="true"
+            frameborder="0"
+            layout="fill"
+            sandbox="allow-scripts allow-same-origin"
+            src="https://www.test.bbc.com/ws/av-embeds/articles/foo/p01k6msp/amp"
+          >
+            <amp-img
+              layout="fill"
+              placeholder="true"
+              src="https://ichef.test.bbci.co.uk/images/ic/512xn/p01k6mtv.jpg"
+            />
+          </amp-iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
 `;
 
 exports[`MediaPlayer is called correctly Calls the canonical placeholder when platform is canonical 1`] = `
