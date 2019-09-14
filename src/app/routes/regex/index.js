@@ -33,3 +33,5 @@ export const mediaDataRegexPath = buildMediaDataRoutes(servicesWithRadioOrTv);
 
 export const mediaAssetPageRegexPath = `/:service(${serviceRegex})/:assetUri(${assetUriRegex}):amp(${ampRegex})?`;
 export const mediaAssetPageDataRegexPath = `${mediaAssetPageRegexPath}.json`;
+
+export const searchRegex = `/:service(${serviceRegex})/search/:searchTerm`

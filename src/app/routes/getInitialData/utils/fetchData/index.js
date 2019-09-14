@@ -5,12 +5,12 @@ import preprocess from '../../../../lib/utilities/preprocessor';
 const logger = nodeLogger(__filename);
 const upstreamStatusCodesToPropagate = [200, 404];
 
-const fetchData = async ({ url, preprocessorRules }) => {
+const fetchData = async ({ url, fetchOptions, preprocessorRules }) => {
   let pageData;
   let status;
 
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, fetchOptions);
 
     status = response.status; // eslint-disable-line prefer-destructuring
 

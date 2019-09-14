@@ -1,16 +1,19 @@
 import Article from '../containers/Article';
 import FrontPage from '../containers/FrontPage';
 import MediaPage from '../containers/MediaPage';
+import SearchPage from '../containers/Search';
 import ErrorPage from '../containers/Error';
 import getArticleInitialData from './getInitialData/article';
 import getFrontpageInitialData from './getInitialData/frontpage';
 import getMediaPageInitialData from './getInitialData/mediapage';
 import getMediaAssetPageInitialData from './getInitialData/mediaAssetPage';
+import getSearchInitialData from './getInitialData/searchPage'
 import {
   articleRegexPath,
   frontpageRegexPath,
   mediaRadioAndTvRegexPathsArray,
   mediaAssetPageRegexPath,
+  searchRegex,
 } from './regex';
 
 const routes = [
@@ -41,6 +44,12 @@ const routes = [
     component: MediaPage,
     getInitialData: getMediaAssetPageInitialData,
     pageType: 'MAP',
+  },
+  {
+    path: searchRegex,
+    component: SearchPage,
+    getInitialData: getSearchInitialData, 
+    pageType: 'frontPage'
   },
   {
     component: ErrorPage,
