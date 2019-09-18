@@ -2,14 +2,19 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import { withKnobs } from '@storybook/addon-knobs';
+import { ServiceContextProvider } from '../../contexts/ServiceContext';
+import { ToggleContextProvider } from '../../contexts/ToggleContext';
+import { RequestContextProvider } from '../../contexts/RequestContext';
 
-import MediaPage from '.';
+import CpsAssetMain from '.';
 import indonesia from '../../../../data/indonesia/bbc_indonesian_radio/liveradio.json';
 import korean from '../../../../data/korean/bbc_korean_radio/liveradio.json';
 import tigrinya from '../../../../data/tigrinya/bbc_tigrinya_radio/liveradio.json';
 import afaanoromoo from '../../../../data/afaanoromoo/bbc_afaanoromoo_radio/liveradio.json';
 import amharic from '../../../../data/amharic/bbc_amharic_radio/liveradio.json';
 
+// Not all services have fixtures for article data yet
+// the service selector will be constrained to services that have article fixtures:
 const liveRadioFixtures = {
   indonesia,
   korean,
@@ -17,6 +22,8 @@ const liveRadioFixtures = {
   afaanoromoo,
   amharic,
 };
+
+const validServices = Object.keys(liveRadioFixtures);
 
 const matchFixtures = service => ({
   params: {
@@ -31,27 +38,32 @@ const matchFixtures = service => ({
   },
 });
 
-storiesOf('Pages|Media Page', module)
+storiesOf('Containers|Cps Asset', module)
   .addDecorator(withKnobs)
   .add(
     'default',
     inputProvider({
       // eslint-disable-next-line react/prop-types
-      componentFunction: ({ service }) => (
-        <MediaPage
-          match={matchFixtures(service)}
-          data={{
-            pageData: liveRadioFixtures[service],
-            status: 200,
-          }}
-          service={service}
-          isAmp={false}
-          loading={false}
-          error=""
-          pageType="media"
-        />
-      ),
-      service: Object.keys(liveRadioFixtures),
+      componentFunction: ({ service }) => {
+        return (
+          <ToggleContextProvider>
+            <ServiceContextProvider service={service}>
+              <RequestContextProvider
+                isAmp={false}
+                pageType="media"
+                service={service}
+              >
+                <CpsAssetMain
+                  pageData={liveRadioFixtures[service]}
+                  match={matchFixtures(service)}
+                  service={service}
+                />
+              </RequestContextProvider>
+            </ServiceContextProvider>
+          </ToggleContextProvider>
+        );
+      },
+      services: validServices,
       options: { defaultService: 'indonesia' },
     }),
   );

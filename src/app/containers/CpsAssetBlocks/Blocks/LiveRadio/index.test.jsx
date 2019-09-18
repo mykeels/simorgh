@@ -4,7 +4,7 @@ import { RequestContext } from '../../../../contexts/RequestContext';
 import { suppressPropWarnings } from '../../../../../testHelpers';
 import LiveRadio from '.';
 
-describe('MediaPageBlocks LiveRadio', () => {
+describe('CpsAssetBlocks LiveRadio', () => {
   shouldMatchSnapshot(
     'should render correctly for canonical',
     <RequestContext.Provider value={{ platform: 'canonical' }}>

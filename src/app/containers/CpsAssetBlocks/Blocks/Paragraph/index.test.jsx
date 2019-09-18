@@ -2,13 +2,13 @@ import React from 'react';
 import { shouldMatchSnapshot, isNull } from '@bbc/psammead-test-helpers';
 import { ServiceContextProvider } from '../../../../contexts/ServiceContext';
 import { suppressPropWarnings } from '../../../../../testHelpers';
-import Heading from '.';
+import Paragraph from '.';
 
-describe('MediaPageBlocks Heading', () => {
+describe('CpsAssetBlocks Paragraph', () => {
   shouldMatchSnapshot(
     'should render correctly',
     <ServiceContextProvider service="news">
-      <Heading uuid="uuid" idAttr="idAttr" text="Example text" />
+      <Paragraph uuid="uuid" idAttr="idAttr" text="Example text" />
     </ServiceContextProvider>,
   );
 
@@ -18,7 +18,7 @@ describe('MediaPageBlocks Heading', () => {
     isNull(
       'should render null',
       <ServiceContextProvider service="news">
-        <Heading uuid="uuid" idAttr="idAttr" />
+        <Paragraph uuid="uuid" idAttr="idAttr" />
       </ServiceContextProvider>,
     );
   });

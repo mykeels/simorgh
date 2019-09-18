@@ -3,24 +3,24 @@ import { latin } from '@bbc/gel-foundations/scripts';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { ServiceContext } from '../../contexts/ServiceContext';
 import { RequestContext } from '../../contexts/RequestContext';
-import MediaPageMain from '.';
+import CpsAssetMain from '.';
 import amharicPageData from '../../../../data/amharic/bbc_amharic_radio/liveradio';
 import addIdsToBlocks from '../../routes/getInitialData/mediapage/addIdsToBlocks';
 
 jest.mock('../Metadata', () => () => <div id="metadata" />);
 
-jest.mock('../MediaPageBlocks', () => props => <div id="blocks" {...props} />);
+jest.mock('../CpsAssetBlocks', () => props => <div id="blocks" {...props} />);
 
 const pageData = addIdsToBlocks(amharicPageData);
 
-describe('Media Page Main', () => {
+describe('Cps Asset Main', () => {
   shouldMatchSnapshot(
     'should match snapshot',
     <ServiceContext.Provider value={{ script: latin }}>
       <RequestContext.Provider
         value={{ platform: 'canonical', pageType: 'media' }}
       >
-        <MediaPageMain service="amharic" pageData={pageData} />
+        <CpsAssetMain service="amharic" pageData={pageData} />
       </RequestContext.Provider>
     </ServiceContext.Provider>,
   );

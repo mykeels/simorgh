@@ -1,6 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import MediaPage from '.';
+import CpsAsset from '.';
 import amharicPageData from '../../../../data/amharic/bbc_amharic_radio/liveradio';
 
 const liveRadioScaffoldProps = {
@@ -58,17 +58,17 @@ jest.mock('../PageHandlers/withData', () => Component => {
   return DataContainer;
 });
 
-jest.mock('../MediaPageMain', () => {
-  const MediaPageMain = () => <div>MediaPageMain</div>;
+jest.mock('../CpsAssetMain', () => {
+  const CpsAssetMain = () => <div>CpsAssetMain</div>;
 
-  return MediaPageMain;
+  return CpsAssetMain;
 });
 
-describe('Media Page', () => {
+describe('Cps Asset', () => {
   describe('snapshots', () => {
     shouldMatchSnapshot(
       'should match scaffold snapshot',
-      <MediaPage {...liveRadioScaffoldProps} />,
+      <CpsAsset {...liveRadioScaffoldProps} />,
     );
   });
 });

@@ -15,7 +15,7 @@ const blockMap = {
 
 const SKIP_LINK_ANCHOR_ID = 'content';
 
-const MediaPageBlocks = ({ blocks }) => {
+const CpsAssetBlocks = ({ blocks }) => {
   if (!blocks || !blocks.length) return null;
 
   return blocks.map((props, index) => {
@@ -39,7 +39,7 @@ const MediaPageBlocks = ({ blocks }) => {
   });
 };
 
-MediaPageBlocks.propTypes = {
+CpsAssetBlocks.propTypes = {
   blocks: arrayOf(
     shape({
       uuid: string,
@@ -51,4 +51,4 @@ MediaPageBlocks.propTypes = {
   ).isRequired,
 };
 
-export default MediaPageBlocks;
+export default CpsAssetBlocks;

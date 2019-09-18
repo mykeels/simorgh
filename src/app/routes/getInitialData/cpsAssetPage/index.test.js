@@ -1,6 +1,6 @@
 import baseUrl from '../utils/getBaseUrl';
 import fetchData from '../utils/fetchData';
-import getMediaAssetPageInitialData from '.';
+import getCpsAssetPageInitialData from '.';
 
 const mockData = { service: 'pidgin', status: 200, pageData: {} };
 
@@ -12,9 +12,9 @@ baseUrl.mockImplementation(() => mockBaseUrl);
 jest.mock('../utils/fetchData', () => jest.fn());
 fetchData.mockImplementation(() => mockData);
 
-describe('getMediaAssetPageInitialData', () => {
+describe('getCpsAssetPageInitialData', () => {
   it('should match the url for MAPs', async () => {
-    await getMediaAssetPageInitialData({
+    await getCpsAssetPageInitialData({
       service: 'pidgin',
       assetUri: 'tori-49450859',
     });
@@ -24,7 +24,7 @@ describe('getMediaAssetPageInitialData', () => {
     });
   });
   it('should return the expected page data', async () => {
-    expect(await getMediaAssetPageInitialData({ service: 'pidgin' })).toEqual(
+    expect(await getCpsAssetPageInitialData({ service: 'pidgin' })).toEqual(
       mockData,
     );
   });

@@ -2,7 +2,7 @@ import onClient from '../../../lib/utilities/onClient';
 import getBaseUrl from '../utils/getBaseUrl';
 import fetchData from '../utils/fetchData';
 
-const getMediaAssetPageInitialData = props => {
+const getCpsAssetPageInitialData = props => {
   const { service, assetUri } = props;
 
   const baseUrl = onClient()
@@ -14,4 +14,4 @@ const getMediaAssetPageInitialData = props => {
   return fetchData({ url });
 };
 
-export default getMediaAssetPageInitialData;
+export default getCpsAssetPageInitialData;

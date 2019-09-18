@@ -9,8 +9,8 @@ import {
   frontpageManifestRegexPath,
   frontpageSwRegexPath,
   mediaRadioAndTvRegexPathsArray,
-  mediaAssetPageRegexPath,
-  mediaAssetPageDataRegexPath,
+  cpsAssetPageRegexPath,
+  cpsAssetPageDataRegexPath,
 } from './index';
 
 jest.mock('../../lib/config/services', () => ({
@@ -226,7 +226,7 @@ describe('mediaRadioAndTvRegexPathsArray', () => {
     ];
     shouldNotMatchInvalidRoutes(invalidRoutes, mediaRadioAndTvRegexPathsArray);
   });
-  describe('mediaAssetPageRegexPath', () => {
+  describe('cpsAssetPageRegexPath', () => {
     const validRoutes = [
       '/pidgin/12345678',
       '/pidgin/12345678.amp',
@@ -240,7 +240,7 @@ describe('mediaRadioAndTvRegexPathsArray', () => {
       '/mundo/test_underscore-12345678',
     ];
 
-    shouldMatchValidRoutes(validRoutes, mediaAssetPageRegexPath);
+    shouldMatchValidRoutes(validRoutes, cpsAssetPageRegexPath);
 
     // According to CPS a valid assetUri should have 8 digits or more and CPS index is optional
     const inValidRoutes = [
@@ -253,10 +253,10 @@ describe('mediaRadioAndTvRegexPathsArray', () => {
       '/pidgin/test-49450859/',
       '/pidgin/test-494859.amp',
     ];
-    shouldNotMatchInvalidRoutes(inValidRoutes, mediaAssetPageRegexPath);
+    shouldNotMatchInvalidRoutes(inValidRoutes, cpsAssetPageRegexPath);
   });
 
-  describe('mediaAssetPageDataRegexPath', () => {
+  describe('cpsAssetPageDataRegexPath', () => {
     const validRoutes = [
       '/pidgin/12345678.json',
       '/pidgin/test-49450859.json',
@@ -264,7 +264,7 @@ describe('mediaRadioAndTvRegexPathsArray', () => {
       '/mundo/test_underscore-12345678.json',
     ];
 
-    shouldMatchValidRoutes(validRoutes, mediaAssetPageDataRegexPath);
+    shouldMatchValidRoutes(validRoutes, cpsAssetPageDataRegexPath);
 
     // According to CPS a valid assetUri should have 8 digits or more and CPS index is optional
     const inValidRoutes = [
@@ -276,6 +276,6 @@ describe('mediaRadioAndTvRegexPathsArray', () => {
       '/pidgin/test-49450859/.json',
       '/pidgin/test-494859.amp.json',
     ];
-    shouldNotMatchInvalidRoutes(inValidRoutes, mediaAssetPageDataRegexPath);
+    shouldNotMatchInvalidRoutes(inValidRoutes, cpsAssetPageDataRegexPath);
   });
 });
