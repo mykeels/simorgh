@@ -198,7 +198,7 @@ MetadataContainer.propTypes = {
     shape(optimoPromoPropTypes),
     shape(mediaPromoPropTypes),
   ]).isRequired,
-  pageSpecificLinkedData: shape(string),
+  pageSpecificLinkedData: shape({}),
 };
 
 MetadataContainer.defaultProps = {
