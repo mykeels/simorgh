@@ -3,10 +3,10 @@ import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { ServiceContextProvider } from '#contexts/ServiceContext';
 import { RequestContextProvider } from '#contexts/RequestContext';
 import CpsAssetMain from '.';
-import amharicPageData from '#data/amharic/bbc_amharic_radio/liveradio';
+import japanesePageData from '#data/japanese/cpsAssets/video-23248670';
 import addIdsToBlocks from '../../routes/getInitialData/radioPage/addIdsToBlocks'; // fix this in https://github.com/bbc/simorgh/issues/4108
 
-const pageData = addIdsToBlocks(amharicPageData);
+const pageData = addIdsToBlocks(japanesePageData);
 
 describe('CPS Asset Main', () => {
   shouldMatchSnapshot(
