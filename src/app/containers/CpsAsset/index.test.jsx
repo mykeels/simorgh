@@ -1,6 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import CpsAssetPage from '.';
+import CpsAsset from '.';
 import japanesePageData from '#data/japanese/cpsAssets/video-23248670';
 
 const cpsAssetScaffoldProps = {
@@ -56,17 +56,17 @@ jest.mock('../PageHandlers/withData', () => Component => {
   return DataContainer;
 });
 
-jest.mock('../CpsAssetPageMain', () => {
-  const CpsAssetPageMain = () => <div>CpsAssetPageMain</div>;
+jest.mock('../CpsAssetMain', () => {
+  const CpsAssetMain = () => <div>CpsAssetMain</div>;
 
-  return CpsAssetPageMain;
+  return CpsAssetMain;
 });
 
 describe('CPS Asset Page', () => {
   describe('snapshots', () => {
     shouldMatchSnapshot(
       'should match scaffold snapshot',
-      <CpsAssetPage {...cpsAssetScaffoldProps} />,
+      <CpsAsset {...cpsAssetScaffoldProps} />,
     );
   });
 });
