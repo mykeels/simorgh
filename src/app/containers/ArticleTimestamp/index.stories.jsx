@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { storiesOf } from '@storybook/react';
+import { element } from 'prop-types';
+import timemachine from 'timemachine';
 import ArticleTimestamp from '.';
 import { timestampGenerator } from './testHelpers';
 import { ServiceContextProvider } from '#contexts/ServiceContext';
 import services from '#testHelpers/serviceConfigs';
+
+timemachine.reset();
 
 const threeHoursAgo = timestampGenerator({ hours: 3 });
 const fiveHoursAgo = timestampGenerator({ hours: 5 });
@@ -27,6 +31,26 @@ const stories = storiesOf(
   'Containers|Article/Article Timestamp',
   module,
 ).addParameters({ chromatic: { disable: true } });
+
+stories.addDecorator(story => {
+  // This affects the global Date object for the storybook application, to ensure consistency in chromaticQA testing.
+  const WithTimemachine = ({ children }) => {
+    useEffect(() => {
+      timemachine.config({
+        dateString: 'Friday, 9 August 2019 14:04:14',
+        timestamp: 1565359454,
+      });
+      return () => {
+        timemachine.reset();
+      };
+    });
+    return <>{children}</>;
+  };
+  WithTimemachine.propTypes = {
+    children: element.isRequired,
+  };
+  return <WithTimemachine>{story()}</WithTimemachine>;
+});
 
 stories.add('default', () => (
   <WrappedArticleTimestamp
