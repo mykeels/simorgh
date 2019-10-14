@@ -4,9 +4,9 @@ import fetchData from '../utils/fetchData';
 import { variantSanitiser } from '../../../lib/utilities/variantHandler';
 import convertToOptimoBlocks from '#lib/utilities/preprocessor/rules/cpsAssetPage/convertToOptimoBlocks';
 
-const preprocessorRules = [convertToOptimoBlocks];
-
 const getCpsAssetInitialData = async ({ service, variant, assetUri }) => {
+  const preprocessorRules = [await convertToOptimoBlocks];
+
   const baseUrl = onClient()
     ? getBaseUrl(window.location.origin)
     : process.env.SIMORGH_BASE_URL;

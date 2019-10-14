@@ -1,17 +1,19 @@
 import React from 'react';
-import { string, number } from 'prop-types';
-import { pageDataPropType } from '#models/propTypes/data';
+import { string, number, any } from 'prop-types';
+// import { pageDataPropType } from '#models/propTypes/data';
 import PageWrapper from '../../../Layouts/defaultPageWrapper';
 
 const WithPageWrapper = Component => {
-  const PageWrapperContainer = props => (
-    <PageWrapper {...props}>
-      <Component {...props} />
-    </PageWrapper>
-  );
-
+  const PageWrapperContainer = props => {
+    console.log(props);
+    return (
+      <PageWrapper {...props}>
+        <Component {...props} />
+      </PageWrapper>
+    );
+  };
   PageWrapperContainer.propTypes = {
-    pageData: pageDataPropType,
+    pageData: any,
     status: number.isRequired,
     bbcOrigin: string,
   };

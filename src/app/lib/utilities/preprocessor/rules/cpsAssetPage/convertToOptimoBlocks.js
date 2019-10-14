@@ -1,25 +1,25 @@
 import { clone, pathOr } from 'ramda';
 import convertParagraph from './convertParagraph';
 
-const handleMissingType = block =>
-  console.log(`Missing type field on block ${block.type}`); // eslint-disable-line no-console
+const convertToOptimoBlocks = async jsonRaw => {
+  const handleMissingType = block =>
+    console.log(`Missing type field on block ${block.type}`); // eslint-disable-line no-console
 
-const typesToConvert = {
-  paragraph: convertParagraph,
-};
+  const typesToConvert = {
+    paragraph: await convertParagraph,
+  };
 
-const parseBlockByType = block => {
-  if (!block || !block.type) {
-    return null;
-  }
-  const { type } = block;
+  const parseBlockByType = block => {
+    if (!block || !block.type) {
+      return null;
+    }
+    const { type } = block;
 
-  const parsedBlock = (typesToConvert[type] || handleMissingType)(block);
+    const parsedBlock = (typesToConvert[type] || handleMissingType)(block);
 
-  return parsedBlock;
-};
+    return parsedBlock;
+  };
 
-const convertToOptimoBlocks = jsonRaw => {
   const json = clone(jsonRaw);
   const blocks = pathOr([], ['content', 'blocks'], json);
 
