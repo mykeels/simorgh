@@ -96,6 +96,7 @@ const FrontPageSection = ({ bar, group, sectionNumber }) => {
   const seeAll = pathOr(null, ['seeAll'], translations);
   const isFirstSection = sectionNumber === 0;
 
+  // Another comment
   // The current implementation of SectionLabel *requires* a strapline to be
   // present in order to render. It is currently *not possible* to render a
   // section that does not have a strapline without breaking both the visual
